@@ -18,7 +18,7 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password')->nullable();
             $table->uuid('id')->primary();
-            $table->string('password_hash');
+            $table->string('password_hash')->nullable();
             $table->string('full_name')->nullable();
             $table->string('phone_number')->nullable();
             $table->string('role')->default('customer');
